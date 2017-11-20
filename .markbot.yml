@@ -1,19 +1,18 @@
-repo: "header-icons"
-canvasCourse: "web-dev-1"
+repo: 'header-icons'
+canvasCourse: 'web-dev-1'
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 1
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - google-fonts
+  - box-sizing
+  - body-margin-0
 
 html:
   - path: "index.html"
-    valid: true
-    bestPractices: true
+    outline: false
     has:
       - ['link[href*="Merriweather"]', 'The Google Font, `Merriweather` is missing']
       - 'header'
@@ -25,28 +24,28 @@ html:
       - 'img[src*="grain-left.svg"]'
       - 'img[src*="grain-right.svg"]'
     search:
-      - "Grains"
-      - "Home"
-      - "Cereals"
-      - "Legumes"
+      - 'Grains'
+      - 'Home'
+      - 'Cereals'
+      - 'Legumes'
 
 css:
-  - path: "css/main.css"
-    valid: true
-    bestPractices: true
-    has:
-      - ["html", "box-sizing", "border-box"]
-      - ['*', 'box-sizing', 'inherit']
-      - ["body", "margin", 0]
+  - path: 'css/main.css'
     search:
-      - "#d05c2e"
-      - "#a63f38"
-      - "float: left"
-      - "float: right"
+      - '#d05c2e'
+      - '#a63f38'
+      - 'float: left'
+      - 'float: right'
 
 screenshots:
-  - path: "index.html"
+  - path: 'index.html'
+    label: 'Before'
     sizes: [320, 650]
+  - path: 'index.html'
+    label: 'After'
+    sizes: [650]
+    before: |
+      hover('nav li:nth-child(2) a', done);
 
 functionality:
   - path: 'index.html'
@@ -55,7 +54,7 @@ functionality:
         let link = $('nav a');
         let oldBg = css(link).backgroundColor;
 
-        hover('nav a', function () {
-          if (css(link).backgroundColor == oldBg) fail('The background colour of the navigaiton links don’t change when hovered')
+        hover(link, function () {
+          if (css(link).backgroundColor == oldBg) return fail('The background colour of the navigaiton links don’t change when hovered')
           pass();
         });
