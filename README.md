@@ -20,7 +20,7 @@ deliverables: "1 HTML file, 1 CSS file, images"
 - *Typefaces:* `Merriweather`
 - *Text sizes:* `2rem`, `1.125rem`
 - *Line height:* `1.5`
-- *Colours:* `#d05c2e`, `#a63f38`
+- *Colours:* `#d05c2e`, `#a63f38`, `#fff`
 - *Margins:* `0`, `0 0 .7rem`, `.3rem`
 - *Paddings:* `0`, `.5em 0 0`, `.4rem 0`
 - *Grain icon width:* `40px`
