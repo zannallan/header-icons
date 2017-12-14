@@ -17,7 +17,7 @@ deliverables: "1 HTML file, 1 CSS file, images"
 
 ## Details
 
-- *Typefaces:* `Merriweather`
+- *Typefaces:* `Merriweather` (regular, bold)
 - *Text sizes:* `2rem`, `1.125rem`
 - *Line height:* `1.5`
 - *Colours:* `#d05c2e`, `#a63f38`, `#fff`
