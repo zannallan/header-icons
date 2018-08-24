@@ -1,5 +1,5 @@
 ---
-summary: "Use float to add navigation and two image icons to the header of a website."
+summary: "Use Flexbox to add navigation and two image icons to the header of a website."
 time: "1 hour"
 deliverables: "1 HTML file, 1 CSS file, images"
 ---
@@ -10,7 +10,7 @@ deliverables: "1 HTML file, 1 CSS file, images"
 
 - *Fork this repository.*
 - Write the HTML necessary for the header and navigation.
-- Use `float` to arrange the grain icons and the navigation items.
+- Use Flexbox to arrange the grain icons and the navigation items.
 - *Run it through Markbot and make sure it passes all the checks.*
 
 ---
@@ -21,8 +21,8 @@ deliverables: "1 HTML file, 1 CSS file, images"
 - *Text sizes:* `2rem`, `1.125rem`
 - *Line height:* `1.5`
 - *Colours:* `#d05c2e`, `#a63f38`, `#fff`
-- *Margins:* `0`, `0 0 .7rem`, `.3rem`
-- *Paddings:* `0`, `.5em 0 0`, `.4rem 0`
+- *Margins:* `0`
+- *Paddings:* `0`, `.5em 0`, `.4rem 0`
 - *Grain icon width:* `40px`
 
 ---
@@ -39,11 +39,3 @@ Visually match the images in the “screenshots” folder and create the interac
 ## Hand in
 
 Drop this folder into your Markbot application. Make sure to fix all the errors. And submit for grades using Markbot.
-
----
-
-## Optional challenges
-
-*These challenges are here if you’d like to try a little more work—they are for extra experience and learning. They are completely optional and not graded. Show them to me if you’d like—I’d love to see them.*
-
-1. Figure out how to use [Flexbox](https://learn-the-web.algonquindesign.ca/topics/advanced-layout-systems/) and complete the layout using `display: flex` instead of `float`

@@ -34,8 +34,10 @@ css:
     search:
       - '#d05c2e'
       - '#a63f38'
-      - 'float: left'
-      - 'float: right'
+      - 'display: flex'
+      - 'flex-direction: row'
+      - 'justify-content:'
+      - 'align-items:'
 
 screenshots:
   - path: 'index.html'
